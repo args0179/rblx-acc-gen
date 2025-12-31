@@ -1,0 +1,65 @@
+# ============================================
+# Roblox Account Generator - Requirements
+# ============================================
+# Install all packages: pip install -r requirements.txt
+# Python version required: 3.8+
+
+# Selenium - Web automation framework
+selenium>=4.15.0
+
+# Requests - HTTP library for proxy testing
+requests>=2.31.0
+
+# ============================================
+# ADDITIONAL MANUAL DOWNLOADS REQUIRED:
+# ============================================
+
+# 1. Chromium Browser (Open-source version of Chrome)
+#    Official site: https://www.chromium.org/
+#    
+#    Download options:
+#    a) Official builds: https://www.chromium.org/getting-involved/download-chromium/
+#    b) Snapshots: https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html
+#    c) Portable builds: https://chromium.woolyss.com/download/
+#    
+#    - Choose: Windows 64-bit version
+#    - Extract to project folder
+#    - Update chrome_binary path in Config class to point to chrome.exe or chromium.exe
+
+# 2. Nopecha Extension (Auto-downloaded on first run)
+#    Free tier: No setup needed
+#    Premium: Get API key from https://nopecha.com
+#    - Cost: ~$5-15/month for unlimited captcha solving
+#    - Add key to nopecha_key in Config class
+
+# 3. Proxies (Optional)
+#    If you need proxies, get from:
+#    - https://webshare.io (Free 10 proxies)
+#    - https://smartproxy.com (Paid, reliable)
+#    - https://proxyscrape.com (Mixed quality)
+#    
+#    Create proxies.txt with format:
+#    ip:port
+#    http://user:pass@ip:port
+#    socks5://ip:port
+
+# ============================================
+# VERIFICATION COMMANDS:
+# ============================================
+# After install, verify with:
+#   python --version          (Should be 3.8+)
+#   pip list | grep selenium  (Should show 4.15.0+)
+#   pip list | grep requests  (Should show 2.31.0+)
+
+# ============================================
+# TROUBLESHOOTING:
+# ============================================
+# If pip install fails, try:
+#   pip install --upgrade pip
+#   pip install --no-cache-dir -r requirements.txt
+#
+# On Windows, if colorama has issues:
+#   pip install colorama --force-reinstall
+#
+# On Linux/Mac, you may need:
+#   pip3 install -r requirements.txt
